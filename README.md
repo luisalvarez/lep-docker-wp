@@ -5,7 +5,7 @@ Linux Nginx PHP docker image for Laravel
 
 ## How to use (Sample Dockerfile)
 ```
-FROM solucionesgbh/lep:latest
+FROM luisalvarez/lep-wp-docker:latest
 
 # Delete sample app
 RUN rm -fr /app/*
