@@ -46,6 +46,7 @@ ENV PATH $BASE_NODE_PATH/$NODE_VER/bin:$PATH
 
 
 # Confs
+RUN mkdir /run/php
 COPY nginx/default /etc/nginx/sites-available
 COPY supervisord /etc/supervisor/conf.d
 RUN sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php/5.6/cli/php.ini && \
