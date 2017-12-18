@@ -33,7 +33,7 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 
 # Install node, bower and gulp-cli
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.6/install.sh | bash
-ENV NODE_VER v5.12.0
+ENV NODE_VER v6.11.1
 ENV NVM_DIR "/root/.nvm"
 RUN [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" \
     && nvm install $NODE_VER \
